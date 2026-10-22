@@ -1,0 +1,25 @@
+# BowlBuddy
+
+> BowlBuddy is a bowling score and stats tracker for iPhone, iPad and Apple Watch. Score every ball in two taps (pins left standing, or just the final score), and follow your average, strikes, spares, splits, leagues and bowling ball arsenal. No account: scores sync through the user's private iCloud database.
+
+- Website: https://bowlbuddy.download/
+- Contact: support@bowlbuddy.download
+- Platforms: iPhone and iPad (iOS / iPadOS 26 or later), Apple Watch (watchOS 26 or later, Pro). No Android version.
+- Language: English
+- Price: free, with an optional Pro upgrade (monthly subscription or one-time lifetime purchase, Family Sharing supported)
+- Privacy: no account, no ads, no analytics, no third-party SDKs; data stays on device and in the user's iCloud
+- Status: coming soon to the App Store
+
+## Features
+
+- Scoring: ball by ball with the pin deck, or final score only; tenth frame, splits and fouls handled
+- Stats: average, strike and spare rates, single-pin conversion, splits; every number opens its games
+- Leagues, bowling centers (found with Apple Maps, no location permission), sessions and series
+- Arsenal: balls with average and strike rate per ball
+- iCloud sync, CSV export and import (free)
+- Pro: Apple Watch app, league handicap and no-tap, pocket hits, lane and oil details, more bowlers, unlimited arsenal, PDF season report, widgets and Live Activity, Siri and Shortcuts, accent colors
+
+## Pages
+
+- [Home and FAQ](https://bowlbuddy.download/)
+- [Terms of Use and Privacy Policy](https://bowlbuddy.download/legal/)
