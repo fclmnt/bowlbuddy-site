@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://bowlbuddy.download/</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-11-01</lastmod>
+    <image:image><image:loc>https://bowlbuddy.download/assets/img/iphone-stats.webp</image:loc></image:image>
+    <image:image><image:loc>https://bowlbuddy.download/assets/img/iphone-entry.webp</image:loc></image:image>
+    <image:image><image:loc>https://bowlbuddy.download/assets/img/iphone-detail.webp</image:loc></image:image>
+    <image:image><image:loc>https://bowlbuddy.download/assets/img/iphone-advanced.webp</image:loc></image:image>
+    <image:image><image:loc>https://bowlbuddy.download/assets/img/iphone-leaves.webp</image:loc></image:image>
+    <image:image><image:loc>https://bowlbuddy.download/assets/img/iphone-advanced-middle.webp</image:loc></image:image>
+    <image:image><image:loc>https://bowlbuddy.download/assets/img/iphone-league.webp</image:loc></image:image>
+    <image:image><image:loc>https://bowlbuddy.download/assets/img/watch-scoring.webp</image:loc></image:image>
+    <image:image><image:loc>https://bowlbuddy.download/assets/img/watch-row-final.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bowlbuddy.download/legal/</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-11-01</lastmod>
   </url>
 </urlset>

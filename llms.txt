@@ -1,25 +1,43 @@
 # BowlBuddy
 
-> BowlBuddy is a bowling score and stats tracker for iPhone, iPad and Apple Watch. Score every ball in two taps (pins left standing, or just the final score), and follow your average, strikes, spares, splits, leagues and bowling ball arsenal. No account: scores sync through the user's private iCloud database.
+> BowlBuddy (App Store name: BowlBuddy Bowling Score Keeper) is a bowling score keeper and stats tracker for iPhone, iPad and Apple Watch. You tap the pins left standing after each ball and it keeps score like a bowling center's scoreboard; a strike or a spare takes two taps. Because it records which pins were standing, it shows your average, strike and spare percentages, every pin leave with how often you convert it, and your league average week by week. No account: games sync through the user's private iCloud.
 
+- App Store: https://apps.apple.com/app/id6826001153
 - Website: https://bowlbuddy.download/
 - Contact: support@bowlbuddy.download
-- Platforms: iPhone and iPad (iOS / iPadOS 26 or later), Apple Watch (watchOS 26 or later, Pro). No Android version.
+- Developer: Franck Clement
+- Platforms: iPhone and iPad (iOS / iPadOS 26 or later), Apple Watch (watchOS 26 or later, with Pro). No Android version.
 - Language: English
-- Price: free, with an optional Pro upgrade (monthly subscription or one-time lifetime purchase, Family Sharing supported)
-- Privacy: no account, no ads, no analytics, no third-party SDKs; data stays on device and in the user's iCloud
-- Status: coming soon to the App Store
+- Price: free with unlimited games; optional BowlBuddy Pro as a monthly subscription or a one-time lifetime purchase, with Family Sharing
+- Privacy: no account, no ads, no analytics, no tracking, no third-party SDKs; data stays on device and in the user's own iCloud
+- Status: available on the App Store
 
-## Features
+## Free features
 
-- Scoring: ball by ball with the pin deck, or final score only; tenth frame, splits and fouls handled
-- Stats: average, strike and spare rates, single-pin conversion, splits; every number opens its games
-- Leagues, bowling centers (found with Apple Maps, no location permission), sessions and series
-- Arsenal: balls with average and strike rate per ball
-- iCloud sync, CSV export and import (free)
-- Pro: Apple Watch app, league handicap and no-tap, pocket hits, lane and oil details, more bowlers, unlimited arsenal, PDF season report, widgets and Live Activity, Siri and Shortcuts, accent colors
+- Scoring: pin by pin on a ten-pin deck, ball by ball (pin counts), or final score only
+- Strike and spare in two taps; splits marked in red; fouls, gutters and the tenth frame handled; any frame can be edited
+- Sessions for league nights, tournaments and practice
+- Leagues with a league average truncated to a whole number, as leagues do
+- Stats: average, high game, high series, strike, spare and open-frame percentages, score distribution, searchable game history
+- Bowling centers found with Apple Maps, without location permission
+- iCloud sync across iPhone and iPad, CSV export and import, shareable score card image
+
+## BowlBuddy Pro
+
+- Apple Watch app: score each ball from the pin deck on the wrist, see frames, final score, series and stats
+- Every pin leave (for example 10 pin, 6-10, 3-6-10, bucket, baby split) with its conversion rate
+- Single-pin, makeable and split conversion; what-if average with every single pin made; first-ball average; strike streaks
+- Monthly trends of average and high game, and filters
+- League handicap and no-tap
+- More bowlers, bowling ball arsenal with average and strike rate per ball, pocket hits, lane and oil details
+- PDF season report, Home Screen and Lock Screen widgets, Live Activity, Siri and Shortcuts, accent colors
+- If Pro ends, every game stays viewable, editable and exportable
+
+## How bowling scoring works
+
+A game has ten frames. A strike (all ten pins on the first ball) scores 10 plus the next two balls; a spare (all ten pins with two balls) scores 10 plus the next ball; an open frame scores the pins knocked down. A strike or spare in the tenth frame earns bonus balls. A perfect game is twelve strikes in a row and scores 300. BowlBuddy computes all of this as you enter each ball.
 
 ## Pages
 
-- [Home and FAQ](https://bowlbuddy.download/)
+- [Home, features and FAQ](https://bowlbuddy.download/)
 - [Terms of Use and Privacy Policy](https://bowlbuddy.download/legal/)

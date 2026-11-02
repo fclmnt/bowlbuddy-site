@@ -6,31 +6,167 @@
     <meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)" />
     <script>try { const t = localStorage.getItem("theme"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}</script>
-    <title>BowlBuddy: Bowling Scores and Stats</title>
-    <meta name="description" content="BowlBuddy is a bowling score and stats tracker for iPhone, iPad and Apple Watch. Score every ball in two taps, follow your average, leagues and arsenal. No account: your scores stay in your iCloud." />
+    <title>BowlBuddy: Bowling Score Keeper &amp; Stats Tracker for iPhone</title>
+    <meta name="description" content="BowlBuddy is a bowling score keeper and stats tracker for iPhone, iPad and Apple Watch. Score pin by pin in two taps, track your average, spare conversion, leaves and league nights. No account: synced with iCloud." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
     <link rel="canonical" href="https://bowlbuddy.download/" />
+    <meta name="apple-itunes-app" content="app-id=6826001153" />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="BowlBuddy" />
+    <meta property="og:locale" content="en_US" />
     <meta property="og:url" content="https://bowlbuddy.download/" />
-    <meta property="og:title" content="BowlBuddy: Bowling Scores and Stats" />
-    <meta property="og:description" content="Score every ball in two taps and follow your average, leagues and arsenal on iPhone, iPad and Apple Watch." />
-    <meta property="og:image" content="https://bowlbuddy.download/assets/img/icon.png" />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:title" content="BowlBuddy: score it, study it, bowl better" />
+    <meta property="og:description" content="Bowling score keeper for iPhone, iPad and Apple Watch. Two-tap scoring, pin leaves, spare conversion and league averages. No account." />
+    <meta property="og:image" content="https://bowlbuddy.download/assets/img/og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="The BowlBuddy logo, a white bowling ball with a face, on black." />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" type="image/png" href="assets/img/favicon.png" />
     <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+    <link rel="preload" as="image" href="assets/img/iphone-stats.webp" type="image/webp" fetchpriority="high" />
     <link rel="stylesheet" href="assets/site.css" />
     <script defer src="assets/site.js"></script>
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "BowlBuddy",
-        "applicationCategory": "SportsApplication",
-        "operatingSystem": "iOS 26, iPadOS 26, watchOS 26",
-        "description": "Bowling score and stats tracker for iPhone, iPad and Apple Watch. No account; scores sync through your private iCloud.",
-        "url": "https://bowlbuddy.download/",
-        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-        "author": { "@type": "Person", "name": "Franck Clement" }
-    }
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebSite",
+            "@id": "https://bowlbuddy.download/#website",
+            "url": "https://bowlbuddy.download/",
+            "name": "BowlBuddy",
+            "alternateName": "Bowl Buddy",
+            "inLanguage": "en",
+            "publisher": { "@id": "https://bowlbuddy.download/#author" }
+        },
+        {
+            "@type": "Person",
+            "@id": "https://bowlbuddy.download/#author",
+            "name": "Franck Clement",
+            "email": "support@bowlbuddy.download"
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://bowlbuddy.download/#webpage",
+            "url": "https://bowlbuddy.download/",
+            "name": "BowlBuddy: Bowling Score Keeper & Stats Tracker for iPhone",
+            "inLanguage": "en",
+            "isPartOf": { "@id": "https://bowlbuddy.download/#website" },
+            "about": { "@id": "https://bowlbuddy.download/#app" },
+            "mainEntity": { "@id": "https://bowlbuddy.download/#app" },
+            "primaryImageOfPage": "https://bowlbuddy.download/assets/img/iphone-stats.webp",
+            "dateModified": "2026-11-01"
+        },
+        {
+            "@type": "MobileApplication",
+            "@id": "https://bowlbuddy.download/#app",
+            "name": "BowlBuddy Bowling Score Keeper",
+            "alternateName": ["BowlBuddy", "Bowl Buddy", "BowlBuddy bowling score tracker"],
+            "description": "Bowling score keeper and stats tracker for iPhone, iPad and Apple Watch. Score every ball pin by pin in two taps, then follow your average, strike and spare percentages, pin leaves and how often you convert them, and your league average week by week. No account: games sync through the user's private iCloud.",
+            "applicationCategory": "SportsApplication",
+            "operatingSystem": "iOS 26, iPadOS 26, watchOS 26",
+            "url": "https://bowlbuddy.download/",
+            "downloadUrl": "https://apps.apple.com/app/id6826001153",
+            "installUrl": "https://apps.apple.com/app/id6826001153",
+            "sameAs": ["https://apps.apple.com/app/id6826001153"],
+            "image": "https://bowlbuddy.download/assets/img/icon.png",
+            "screenshot": [
+                "https://bowlbuddy.download/assets/img/iphone-stats.webp",
+                "https://bowlbuddy.download/assets/img/iphone-entry.webp",
+                "https://bowlbuddy.download/assets/img/iphone-leaves.webp",
+                "https://bowlbuddy.download/assets/img/iphone-league.webp"
+            ],
+            "inLanguage": "en",
+            "author": { "@id": "https://bowlbuddy.download/#author" },
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "category": "free" },
+            "isAccessibleForFree": true,
+            "featureList": [
+                "Pin-by-pin, ball-by-ball or final-score entry",
+                "Two-tap strikes and spares, splits marked, tenth frame and fouls handled",
+                "Average, high game, high series, strike, spare and open frame percentages",
+                "Score distribution and searchable game history",
+                "Sessions for league nights, tournaments and practice",
+                "Leagues with a truncated league average",
+                "iCloud sync across iPhone and iPad, no account",
+                "CSV export and import, shareable score card image",
+                "Pro: every pin leave with its conversion rate",
+                "Pro: single-pin, makeable and split conversion, what-if average",
+                "Pro: monthly trends of average and high game",
+                "Pro: league handicap and no-tap",
+                "Pro: Apple Watch app",
+                "Pro: bowling ball arsenal, pocket hits, lane and oil details",
+                "Pro: PDF season report, widgets, Live Activity, Siri and Shortcuts"
+            ]
+        },
+        {
+            "@type": "FAQPage",
+            "@id": "https://bowlbuddy.download/#faq",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What is BowlBuddy?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "BowlBuddy is a bowling score keeper and stats tracker for iPhone, iPad and Apple Watch, available on the App Store. You tap the pins left standing after each ball, and it keeps the score like a center scoreboard, then shows your average, strike and spare percentages, pin leaves and league average." }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is BowlBuddy free?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "Yes. Scoring, sessions, leagues, core stats, iCloud sync and CSV export are free, with unlimited games. BowlBuddy Pro, a monthly subscription or a one-time lifetime purchase shared with Family Sharing, adds pin leaves and conversion rates, trends, league handicap, the Apple Watch app, the arsenal, a PDF season report, widgets and Siri." }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How do I keep a bowling score on my iPhone?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "In BowlBuddy, start a game and tap the pins still standing after each ball, then press Enter. A strike or a spare takes two taps. The app adds strike and spare bonuses, marks splits, and follows the tenth-frame rules. You can also enter pin counts ball by ball, or only the final score." }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How is a bowling score calculated?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "A game has ten frames. A frame scores the pins knocked down with its two balls. A strike (all ten pins on the first ball) scores 10 plus the next two balls. A spare (all ten pins with two balls) scores 10 plus the next ball. A strike or spare in the tenth frame earns one or two extra balls. A perfect game, twelve strikes in a row, scores 300. BowlBuddy does this math for you." }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What is spare conversion, and how does BowlBuddy track it?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "Spare conversion is how often you knock down the pins left after your first ball. Because BowlBuddy records which pins were standing, it lists every leave you get, such as the 10 pin, the 6-10 or the 3-6-10, with how many times you converted it. It also splits your rate into single pins, makeable spares and splits, and computes a what-if average with every single pin made." }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How is a league average calculated?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "A league average is your total pinfall in the league divided by the number of games, truncated to a whole number rather than rounded, as most leagues do. BowlBuddy keeps it for each league, week by week, and can apply league handicap and no-tap rules with Pro." }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can I keep score on my Apple Watch?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "Yes, with BowlBuddy Pro. The Watch app shows the pin deck, so you can score each ball from your wrist, check the frames and see your final score and series. Games sync to your iPhone." }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do I need an account?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "No. BowlBuddy uses the Apple Account you are already signed in with. Your scores sync through your private iCloud database, and there is no BowlBuddy server." }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can the developer see my scores?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "No. Everything you enter stays on your devices and in your own iCloud. The app has no ads, no analytics and no tracking." }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Which devices does BowlBuddy run on?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "iPhone and iPad with iOS or iPadOS 26 or later, and Apple Watch with watchOS 26 or later. The Watch app is part of Pro. There is no Android version." }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What happens to my games if Pro ends?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "You keep all of them. You can still view, edit, delete and export everything you recorded; only the Pro features lock." }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can I move my scores from another app?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "BowlBuddy imports its own CSV format, which you can fill in from a spreadsheet. Export and import are in Settings." }
+                }
+            ]
+        }
+    ]
+}
     </script>
 </head>
 <body>
@@ -44,64 +180,179 @@
             </a>
             <nav class="site-nav" aria-label="Main">
                 <a href="#features">Features</a>
+                <a href="#watch">Apple Watch</a>
                 <a href="#pro">Pro</a>
                 <a href="#faq">FAQ</a>
             </nav>
             <button class="theme-toggle" type="button" aria-label="Switch to dark mode" data-label-dark="Switch to dark mode" data-label-light="Switch to light mode"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg><svg class="moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.2 14.6A8.6 8.6 0 0 1 9.4 3.8a.6.6 0 0 0-.8-.7A9.4 9.4 0 1 0 20.9 15.4a.6.6 0 0 0-.7-.8z"/></svg></button>
+            <a class="btn btn-accent" href="https://apps.apple.com/app/apple-store/id6826001153?pt=120827598&amp;ct=website-header&amp;mt=8">Get the app</a>
         </div>
     </header>
+    <nav class="mobile-nav" aria-label="Sections">
+        <a href="#features">Features</a>
+        <a href="#watch">Watch</a>
+        <a href="#pro">Pro</a>
+        <a href="#faq">FAQ</a>
+    </nav>
 
     <main id="main">
         <section class="hero">
             <div class="wrap">
-                <img class="icon" src="assets/img/icon.png" alt="BowlBuddy app icon" width="112" height="112" />
-                <h1>Every ball, every game, every league.</h1>
-                <p>BowlBuddy keeps your bowling scores and stats on iPhone, iPad and Apple Watch. A strike or a spare takes two taps.</p>
-                <div class="actions">
-                    <a class="btn btn-ink" href="#features">See what it does</a>
-                    <a class="btn btn-quiet" href="legal/#privacy">Privacy</a>
+                <div class="copy">
+                    <p class="eyebrow">Bowling score keeper for iPhone, iPad and Apple Watch</p>
+                    <h1><span class="l1">Score it.</span> <span class="l2">Study it.</span> <span class="l3">Bowl better.</span></h1>
+                    <p class="lede">Tap the pins left standing and BowlBuddy keeps score like the center’s scoreboard. Then it shows you where your pins went: your average, your leaves, and the spares that cost you.</p>
+                    <div class="cta-row">
+                        <a class="appstore" href="https://apps.apple.com/app/apple-store/id6826001153?pt=120827598&amp;ct=website-hero&amp;mt=8" aria-label="Download BowlBuddy on the App Store">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                            <span><small>Download on the</small><strong>App Store</strong></span>
+                        </a>
+                        <span class="cta-note">Free · iOS 26 or later</span>
+                    </div>
                 </div>
-                <p class="note">Coming soon to the App Store. Free, with an optional Pro upgrade.</p>
+                <div class="stage">
+                    <img class="phone" src="assets/img/iphone-stats.webp" width="640" height="1308" fetchpriority="high" alt="BowlBuddy Stats on iPhone: a 176.7 average over 166 games, a 264 high game, a 778 high series, 36.6% strikes, 63.0% spares and 23.5% open frames." />
+                    <img class="watch" src="assets/img/watch-scoring.webp" width="400" height="628" alt="BowlBuddy on Apple Watch: the pin deck for frame 6, with the score at 87." />
+                </div>
             </div>
         </section>
 
+        <ul class="strip" aria-label="Highlights">
+            <li><b>2 taps</b> for a strike or a spare</li>
+            <li><b>Every leave</b> with its conversion rate</li>
+            <li><b>No account</b>, synced with iCloud</li>
+            <li><b>Free</b> to score, forever</li>
+        </ul>
+
         <section class="section" id="features">
             <div class="wrap">
-                <div class="section-head">
-                    <span class="kicker"><b>01</b><span class="dash"></span>Features</span>
-                    <h2>Score fast. Know your game.</h2>
-                    <p>Built for league nights and practice sessions, with nothing between you and the next ball.</p>
+                <div class="section-head reveal">
+                    <h2>A bowling scorecard that teaches you something.</h2>
+                    <p>BowlBuddy records which pins were standing after every ball, so it can tell you more than your score: which leaves you get, which ones you miss, and how many pins each miss costs you. Built for league nights, tournaments and practice.</p>
+                </div>
+
+                <article class="feature">
+                    <div class="media reveal">
+                        <div class="duo">
+                            <img class="phone" src="assets/img/iphone-entry.webp" width="640" height="1308" loading="lazy" decoding="async" alt="Scoring frame 6 on iPhone: the ten-pin deck with Strike, Spare, Gutter and Foul keys and a blue Enter button." />
+                            <img class="phone" src="assets/img/iphone-detail.webp" width="640" height="1308" loading="lazy" decoding="async" alt="A finished 209 game: the scorecard with strikes, spares and two split leaves circled in red, and each frame with the ball used." />
+                        </div>
+                    </div>
+                    <div class="copy reveal">
+                        <h3>Score as fast as you bowl</h3>
+                        <p>Tap the pins left standing, press Enter, and you’re ready for the next ball. A strike or a spare takes two taps, and the score updates like the one over the lanes.</p>
+                        <ul class="ticks">
+                            <li>Pin by pin, ball by ball, or just the final score</li>
+                            <li>Splits circled in red, fouls, gutters and the tenth frame handled</li>
+                            <li>Go back and fix any frame, any time</li>
+                            <li>Hold Strike or Enter to mark a pocket hit <span class="pro-tag">PRO</span></li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="feature flip">
+                    <div class="media reveal">
+                        <div class="duo">
+                            <img class="phone" src="assets/img/iphone-stats.webp" width="640" height="1308" loading="lazy" decoding="async" alt="The Stats screen: average, high game, high series, strike, spare and open-frame rates, and the score distribution." />
+                            <img class="phone" src="assets/img/iphone-advanced.webp" width="640" height="1308" loading="lazy" decoding="async" alt="Trends of the average, up to 186.2, and the high game, 264, month by month, above the most frequent pin leaves." />
+                        </div>
+                    </div>
+                    <div class="copy reveal">
+                        <h3>Watch your average climb</h3>
+                        <p>Your average, high game and high series, your strike, spare and open-frame percentages, and how your scores spread. Every number opens the games behind it.</p>
+                        <ul class="ticks">
+                            <li>Average, highs and rates for free, with unlimited games</li>
+                            <li>Score distribution and a searchable history</li>
+                            <li>Monthly trends of your average and high game, and filters <span class="pro-tag">PRO</span></li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="feature">
+                    <div class="media reveal">
+                        <div class="duo">
+                            <img class="phone" src="assets/img/iphone-leaves.webp" width="640" height="1308" loading="lazy" decoding="async" alt="The Leaves list: the 10 pin converted 81% of the time, the 6-10 59%, the 3-6-10 66%, the bucket 62% and the baby split 59%." />
+                            <img class="phone" src="assets/img/iphone-advanced-middle.webp" width="640" height="1308" loading="lazy" decoding="async" alt="Spare stats: 85% of single pins, 72% of makeable spares and 27% of splits converted, and a what-if average 2.8 pins higher." />
+                        </div>
+                    </div>
+                    <div class="copy reveal">
+                        <h3>Know your leaves. Make more spares. <span class="pro-tag">PRO</span></h3>
+                        <p>Every leave you’ve had, from the 10 pin to the bucket and the baby split, with how often you converted it. See your single-pin, makeable and split rates, and the average you’d have if you made every single pin.</p>
+                        <ul class="ticks">
+                            <li>Named leaves: corner pin, bucket, baby split and more</li>
+                            <li>Pin-by-pin conversion on the deck</li>
+                            <li>What-if average, first-ball average and strike streaks</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="feature flip">
+                    <div class="media reveal">
+                        <img class="phone single" src="assets/img/iphone-league.webp" width="640" height="1308" loading="lazy" decoding="async" alt="The Tuesday Mixed league at Sunset Lanes: a 178 league average over 114 games, and each week's series with its lanes." />
+                    </div>
+                    <div class="copy reveal">
+                        <h3>Ready for league night</h3>
+                        <p>Keep every league, its center, night and games per series. BowlBuddy keeps your league average week by week, truncated to a whole number the way leagues do.</p>
+                        <ul class="ticks">
+                            <li>Sessions for league nights, tournaments and practice</li>
+                            <li>Bowling centers found with Apple Maps, no location permission</li>
+                            <li>League handicap and no-tap <span class="pro-tag">PRO</span></li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section watch-section" id="watch">
+            <div class="wrap">
+                <div class="section-head center reveal">
+                    <h2>Leave the phone in the bag.</h2>
+                    <p>The Apple Watch app puts the pin deck on your wrist. Score each ball between shots, check your frames, and see your series when the game ends. Everything syncs to your iPhone. <span class="pro-tag">PRO</span></p>
+                </div>
+                <div class="watches reveal">
+                    <img class="watch" src="assets/img/watch-row-scoring.webp" width="400" height="628" loading="lazy" decoding="async" alt="Scoring frame 6 on Apple Watch with the ten-pin deck." />
+                    <img class="watch" src="assets/img/watch-row-frames.webp" width="400" height="628" loading="lazy" decoding="async" alt="The frames of a game on Apple Watch: strike, 8 spare, strike." />
+                    <img class="watch" src="assets/img/watch-row-final.webp" width="400" height="628" loading="lazy" decoding="async" alt="A final score of 192 on Apple Watch, with the series." />
+                    <img class="watch" src="assets/img/watch-row-stats.webp" width="400" height="628" loading="lazy" decoding="async" alt="League stats on Apple Watch: a 183 average, 40% strikes and 70% spares." />
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <h2>And everything around the game.</h2>
                 </div>
                 <div class="grid">
-                    <article class="card">
-                        <span class="glyph"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="6" cy="6" r="2"/><circle cx="12" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="9" cy="11.5" r="2"/><circle cx="15" cy="11.5" r="2"/><circle cx="12" cy="17" r="2"/></svg></span>
-                        <h3>Two-tap scoring</h3>
-                        <p>Tap the pins left standing, or just the final score. Splits, fouls and the tenth frame are handled for you.</p>
-                    </article>
-                    <article class="card">
-                        <span class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
-                        <h3>Stats that explain themselves</h3>
-                        <p>Average, strikes, spares, single-pin conversion and splits. Every number opens the games it came from.</p>
-                    </article>
-                    <article class="card">
-                        <span class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span>
-                        <h3>Leagues and centers</h3>
-                        <p>Keep every league night, series and center. Find your center with Apple Maps, no location needed.</p>
-                    </article>
-                    <article class="card">
-                        <span class="glyph"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-2.6 5.2a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6zm4.2.8a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2zm-1.4 3.6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg></span>
-                        <h3>Your arsenal</h3>
-                        <p>Log the balls you throw and see your average and strike rate with each one.</p>
-                    </article>
-                    <article class="card">
+                    <article class="card reveal">
                         <span class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18a5 5 0 0 1-.6-10A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9H7z"/></svg></span>
                         <h3>No account. Your iCloud.</h3>
-                        <p>Scores sync between your devices through your own private iCloud. We never see them.</p>
+                        <p>Scores sync between your iPhone, iPad and Watch through your own private iCloud. No sign-up, no ads, no tracking.</p>
                     </article>
-                    <article class="card">
+                    <article class="card reveal">
                         <span class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg></span>
                         <h3>Export anytime</h3>
-                        <p>Your data is never locked: export every game to a CSV file for Numbers, Excel or Google Sheets.</p>
+                        <p>Your data is never locked: export every game to CSV for Numbers, Excel or Google Sheets, and import it back.</p>
+                    </article>
+                    <article class="card reveal">
+                        <span class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 10h18M9 10v10M15 10v10"/></svg></span>
+                        <h3>Share your best games</h3>
+                        <p>Turn a game into a score card image for your league chat. That 279 deserves it.</p>
+                    </article>
+                    <article class="card reveal">
+                        <span class="glyph"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-2.6 5.2a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6zm4.2.8a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2zm-1.4 3.6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg></span>
+                        <h3>Your arsenal <span class="pro-tag">PRO</span></h3>
+                        <p>Log the balls you throw, plus pocket hits, lane and oil details, and see your average and strike rate with each ball.</p>
+                    </article>
+                    <article class="card reveal">
+                        <span class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/><rect x="13" y="13" width="8" height="8" rx="2"/></svg></span>
+                        <h3>Widgets and Live Activity <span class="pro-tag">PRO</span></h3>
+                        <p>Home Screen and Lock Screen widgets, the game in progress as a Live Activity, plus Siri and Shortcuts.</p>
+                    </article>
+                    <article class="card reveal">
+                        <span class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M9 13h7M9 17h5M9 9h3"/></svg></span>
+                        <h3>Season report <span class="pro-tag">PRO</span></h3>
+                        <p>Your whole season in one PDF, ready to print or send to your coach.</p>
                     </article>
                 </div>
             </div>
@@ -109,34 +360,36 @@
 
         <section class="section" id="pro">
             <div class="wrap">
-                <div class="section-head">
-                    <span class="kicker"><b>02</b><span class="dash"></span>Free and Pro</span>
+                <div class="section-head center reveal">
                     <h2>Free to score. Pro to go deeper.</h2>
                     <p>Recording, syncing, editing and exporting your games is free, forever. Pro is a monthly subscription or a one-time purchase, shared with your family.</p>
                 </div>
                 <div class="plans">
-                    <article class="plan">
+                    <article class="plan reveal">
                         <h3>Free</h3>
-                        <p class="price">Everything you need to score</p>
-                        <ul>
+                        <p class="price">Everything you need to keep score</p>
+                        <ul class="ticks">
                             <li>Unlimited games, sessions and leagues</li>
-                            <li>Core stats and game history</li>
+                            <li>Pin-by-pin, ball-by-ball or final-score entry</li>
+                            <li>Average, highs, strike, spare and open rates</li>
                             <li>iCloud sync on iPhone and iPad</li>
                             <li>Score card images to share</li>
                             <li>CSV export and import</li>
                         </ul>
                     </article>
-                    <article class="plan pro">
-                        <h3>BowlBuddy Pro</h3>
-                        <p class="price">Monthly or lifetime</p>
-                        <ul>
+                    <article class="plan pro reveal">
+                        <h3>BowlBuddy <span class="pro-tag">PRO</span></h3>
+                        <p class="price">Monthly or lifetime, with Family Sharing</p>
+                        <ul class="ticks">
+                            <li>Everything in Free</li>
                             <li>Apple Watch app: score from your wrist</li>
+                            <li>Every leave and its conversion rate</li>
+                            <li>Spare and split rates, trends and filters</li>
                             <li>League handicap and no-tap</li>
-                            <li>Pocket hits, lane and oil details</li>
                             <li>More bowlers and an unlimited arsenal</li>
-                            <li>PDF season report</li>
-                            <li>Widgets, Live Activity, Siri and Shortcuts</li>
+                            <li>PDF season report, widgets, Live Activity, Siri</li>
                         </ul>
+                        <p class="fine">The app shows prices in your local currency.</p>
                     </article>
                 </div>
             </div>
@@ -144,22 +397,49 @@
 
         <section class="section" id="faq">
             <div class="wrap">
-                <div class="section-head">
-                    <span class="kicker"><b>03</b><span class="dash"></span>FAQ</span>
-                    <h2>Questions</h2>
+                <div class="section-head center reveal">
+                    <h2>Questions, answered.</h2>
                 </div>
-                <div class="faq">
+                <div class="faq reveal">
+                    <details>
+                        <summary>What is BowlBuddy?</summary>
+                        <p>BowlBuddy is a bowling score keeper and stats tracker for iPhone, iPad and Apple Watch, <a href="https://apps.apple.com/app/apple-store/id6826001153?pt=120827598&amp;ct=website-faq&amp;mt=8">available on the App Store</a>. You tap the pins left standing after each ball, and it keeps the score like a center scoreboard, then shows your average, strike and spare percentages, pin leaves and league average.</p>
+                    </details>
+                    <details>
+                        <summary>Is BowlBuddy free?</summary>
+                        <p>Yes. Scoring, sessions, leagues, core stats, iCloud sync and CSV export are free, with unlimited games. BowlBuddy Pro, a monthly subscription or a one-time lifetime purchase shared with Family Sharing, adds pin leaves and conversion rates, trends, league handicap, the Apple Watch app, the arsenal, a PDF season report, widgets and Siri.</p>
+                    </details>
+                    <details>
+                        <summary>How do I keep a bowling score on my iPhone?</summary>
+                        <p>In BowlBuddy, start a game and tap the pins still standing after each ball, then press Enter. A strike or a spare takes two taps. The app adds strike and spare bonuses, marks splits, and follows the tenth-frame rules. You can also enter pin counts ball by ball, or only the final score.</p>
+                    </details>
+                    <details>
+                        <summary>How is a bowling score calculated?</summary>
+                        <p>A game has ten frames. A frame scores the pins knocked down with its two balls. A strike (all ten pins on the first ball) scores 10 plus the next two balls. A spare (all ten pins with two balls) scores 10 plus the next ball. A strike or spare in the tenth frame earns one or two extra balls. A perfect game, twelve strikes in a row, scores 300. BowlBuddy does this math for you.</p>
+                    </details>
+                    <details>
+                        <summary>What is spare conversion, and how does BowlBuddy track it?</summary>
+                        <p>Spare conversion is how often you knock down the pins left after your first ball. Because BowlBuddy records which pins were standing, it lists every leave you get, such as the 10 pin, the 6-10 or the 3-6-10, with how many times you converted it. It also splits your rate into single pins, makeable spares and splits, and computes a what-if average with every single pin made.</p>
+                    </details>
+                    <details>
+                        <summary>How is a league average calculated?</summary>
+                        <p>A league average is your total pinfall in the league divided by the number of games, truncated to a whole number rather than rounded, as most leagues do. BowlBuddy keeps it for each league, week by week, and can apply league handicap and no-tap rules with Pro.</p>
+                    </details>
+                    <details>
+                        <summary>Can I keep score on my Apple Watch?</summary>
+                        <p>Yes, with BowlBuddy Pro. The Watch app shows the pin deck, so you can score each ball from your wrist, check the frames and see your final score and series. Games sync to your iPhone.</p>
+                    </details>
                     <details>
                         <summary>Do I need an account?</summary>
                         <p>No. BowlBuddy uses the Apple Account you are already signed in with. Your scores sync through your private iCloud database, and there is no BowlBuddy server.</p>
                     </details>
                     <details>
-                        <summary>Can you see my scores?</summary>
-                        <p>No. Everything you enter stays on your devices and in your own iCloud. The app has no analytics and no tracking. See the <a href="legal/#privacy">Privacy Policy</a>.</p>
+                        <summary>Can the developer see my scores?</summary>
+                        <p>No. Everything you enter stays on your devices and in your own iCloud. The app has no ads, no analytics and no tracking. See the <a href="legal/#privacy">Privacy Policy</a>.</p>
                     </details>
                     <details>
-                        <summary>Which devices does it run on?</summary>
-                        <p>iPhone and iPad with iOS and iPadOS 26 or later, and Apple Watch with watchOS 26 or later. The Watch app is part of Pro.</p>
+                        <summary>Which devices does BowlBuddy run on?</summary>
+                        <p>iPhone and iPad with iOS or iPadOS 26 or later, and Apple Watch with watchOS 26 or later. The Watch app is part of Pro. There is no Android version.</p>
                     </details>
                     <details>
                         <summary>What happens to my games if Pro ends?</summary>
@@ -173,6 +453,22 @@
                         <summary>How do I get help?</summary>
                         <p>Email <a href="mailto:support@bowlbuddy.download">support@bowlbuddy.download</a> with your device model, iOS version and what happened.</p>
                     </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="final-title">
+            <div class="wrap">
+                <div class="final reveal">
+                    <img class="icon" src="assets/img/icon.png" width="96" height="96" alt="BowlBuddy app icon" loading="lazy" />
+                    <h2 id="final-title">See you on the lanes.</h2>
+                    <p>Download BowlBuddy for iPhone, iPad and Apple Watch, and score your next game in two taps a ball.</p>
+                    <div class="cta-row">
+                        <a class="appstore" href="https://apps.apple.com/app/apple-store/id6826001153?pt=120827598&amp;ct=website-footer&amp;mt=8" aria-label="Download BowlBuddy on the App Store">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                            <span><small>Download on the</small><strong>App Store</strong></span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>

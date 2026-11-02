@@ -49,4 +49,19 @@
     const onScroll = () => header && header.classList.toggle("scrolled", window.scrollY > 8);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
+
+    // Sections fade in as they scroll into view.
+    const revealed = document.querySelectorAll(".reveal");
+    if (reduceMotion || !("IntersectionObserver" in window)) {
+        revealed.forEach((el) => el.classList.add("in"));
+    } else {
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add("in");
+                io.unobserve(entry.target);
+            });
+        }, { rootMargin: "0px 0px -8% 0px" });
+        revealed.forEach((el) => io.observe(el));
+    }
 })();
